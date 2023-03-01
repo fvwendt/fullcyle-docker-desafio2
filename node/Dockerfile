@@ -2,22 +2,11 @@ FROM node:15
 
 WORKDIR /usr/src/app
 
-#COPY src/* .
-
-#RUN npm install && \
-#    npm install mysql --save
-
-#RUN addgroup app && adduser -S -G app app && chown -R app /usr/src/app
-#USER app
-
-#USER node
-
 COPY src/package*.json ./
-RUN whoami > usuario.txt
 RUN npm install
 RUN npm install mysql --save
 
-COPY --chown=node:node src/* .
+COPY src/* .
 
 #RUN apt-get update && apt-get install -y wget
 #ENV DOCKERIZE_VERSION v0.6.1
