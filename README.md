@@ -1,4 +1,4 @@
 # fullcyle-docker-desafio2
 
-Comando:
+Comando para executar:
 docker-compose up -d --build
