@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 mkdir mysql/db -p
 mkdir node/src -p
 
